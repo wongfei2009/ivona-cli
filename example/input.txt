@@ -1,0 +1,22 @@
+<speak>
+  <prosody pitch="high">
+  <break time="6000ms" />
+  Today we suffer a couple of logging problems in our products:
+  <break time="500ms" />
+  1. Generate <emphasis>too much</emphasis> logs for L2 support - program call stack <emphasis>can’t help</emphasis> them to troubleshoot field issues.<break time="500ms" />
+  2. Developers complaint <emphasis>not enough logs</emphasis> for debugging field issues, if logs are suppressed.<break time="500ms" />
+  3. It usually requires <emphasis>advanced skills to perform data-minding</emphasis> on the logs.<break time="500ms" />
+  4. Different programs write logs into <emphasis>different locations</emphasis>.<break time="500ms" />
+  5. 3rd party component, like NGINX, is part of our product; But it doesn’t write logs meaningful to our domain.<break time="500ms" />
+  <break time="3000ms" />
+  There are three types of source:
+  <break time="500ms" />
+  1. 3rd party log files. <break time="500ms" />
+  2. Java application using Log4j. <break time="500ms" />
+  3. C++ application using Log4cxx. <break time="500ms" />
+  <break time="500ms" />
+  All these logs are collected by LogStash Agent.<break time="1000ms" />
+  Then we have a LogStash server, which provides broking, indexing, storage and searching.<break time="1000ms" />
+  LogStash agents forward the logs to the broker, indexer and storage consequently.<break time="1000ms" />
+  </prosody>
+</speak>
